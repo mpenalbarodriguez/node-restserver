@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
     // parse application/json
 app.use(bodyParser.json())
 
-app.use(require('./routes/usuario'));
+// Configuración global de rutas
+app.use(require('./routes/index'));
 
 // await mongoose.connect('mongodb://localhost/27017/cafe', {
 //     useNewUrlParser: true,
